@@ -11,16 +11,21 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Dependencies
-        run: yarn install
+        run: |
+          yarn install
       - name: Verify Lint
-        run: yarn lint
+        run: |
+          yarn lint
       - name: Run Unit Tests and Coverage
-        run: yarn test
+        run: |
+          yarn test
       - name: Run E2E Tests
         - run: |
-          yarn docker:upd
-        - run: yarn cypress:run
-        - run: yarn docker:down
+            yarn docker:upd
+        - run: |
+            yarn cypress:run
+        - run: |
+            yarn docker:down
 #      - uses: actions/checkout@v2
 #      - name: Install yarn dependencies
 #        run: |
