@@ -39,6 +39,15 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `yarn verify`
+This command runs the same thing command that the PR Verify check runs.  If this check passes, chances are you'll be able to merge the PR.
+
+#E2E Tests
+I am using Cypress for my E2E testing. To run the tests:
+- `yarn start`
+- `yarn cypress:open` to run them in a browser
+- `yarn cypress:run` to run the cypress tests headless.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
