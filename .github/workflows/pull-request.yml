@@ -19,9 +19,9 @@ jobs:
       - name: Run Unit Tests and Coverage
         run: |
           yarn test
-#    container:
-#      runs-on: ubuntu-latest
-#        container: node:14-slim
-#        steps:
-#          - run: |
-#            yarn docker:upd && yarn cypress:run && yarn docker:down
+      - name: Create Docker Image
+        run: |
+          docker build -t "personal-website" ./
+      - name: Run E2E tests
+          run: |
+            yarn docker:upd && yarn cypress:run && yarn docker:down
