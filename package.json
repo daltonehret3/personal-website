@@ -6,7 +6,7 @@
     "build": "react-scripts build",
     "coverage": "jest --coverage",
     "eject": "react-scripts eject",
-    "start": "react start",
+    "start": "react-scripts start",
     "test": "yarn lint && yarn coverage",
     "lint": "eslint . --ext .js,.jsx,.tx,.tsx",
     "unit": "jest --env=jsdom"
@@ -29,8 +29,7 @@
     "@babel/preset-react": "^7.12.10",
     "babel-jest": "^26.6.3",
     "babel-polyfill": "^6.26.0",
-    "eslint-plugin-react": "^7.22.0",
-    "jest": "^26.6.3"
+    "eslint-plugin-react": "^7.22.0"
   },
   "browserslist": {
     "production": [
