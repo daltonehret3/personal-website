@@ -4,6 +4,7 @@
   "plugins": [
     "jest",
     "react",
+    "prettier",
     "eslint-plugin-import"
   ],
   "extends": [
@@ -80,6 +81,16 @@
     ],
     "eqeqeq": "error"
   },
+  "overrides": [
+    {
+      "files": [
+        "**/cypress/**"
+      ],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ],
   "env": {
     "browser": true,
     "jest": true,
