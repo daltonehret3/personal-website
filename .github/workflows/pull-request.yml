@@ -9,19 +9,29 @@ jobs:
   pull-request:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Install yarn dependencies
-        run: |
-          yarn install
-      - name: Verify ESLint
-        run: |
-          yarn lint
+      - name: Install Dependencies
+        run: yarn install
+      - name: Verify Lint
+        run: yarn lint
       - name: Run Unit Tests and Coverage
-        run: |
-          yarn test
-    container:
-      runs-on: ubuntu-latest
-        container: node:14-slim
-        steps:
-          - run: |
-            yarn docker:upd && yarn cypress:run && yarn docker:down
+        run: yarn test
+      - name: Run E2E Tests
+        - run: yarn docker:upd
+        - run: yarn cypress:run
+        - run: yarn docker:down
+#      - uses: actions/checkout@v2
+#      - name: Install yarn dependencies
+#        run: |
+#          yarn install
+#      - name: Verify ESLint
+#        run: |
+#          yarn lint
+#      - name: Run Unit Tests and Coverage
+#        run: |
+#          yarn test
+#    container:
+#      runs-on: ubuntu-latest
+#        container: node:14-slim
+#        steps:
+#          - run: |
+#            yarn docker:upd && yarn cypress:run && yarn docker:down
