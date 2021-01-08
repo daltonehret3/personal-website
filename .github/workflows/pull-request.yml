@@ -13,6 +13,6 @@ jobs:
       - name: Install yarn dependencies
         run: |
           yarn install
-      - name: Run tests
+      - name: Verify all app steps work
         run: |
-          yarn test
+          yarn verify
