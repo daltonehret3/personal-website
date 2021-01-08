@@ -13,6 +13,12 @@ jobs:
       - name: Install yarn dependencies
         run: |
           yarn install
-      - name: Verify all app steps work
+      - name: Verify ESLint
         run: |
-          yarn verify
+          yarn lint
+      - name: Run Unit Tests and Coverage
+        run: |
+          yarn test
+      - name: Verify E2E tests
+        run: |
+          yarn start && yarn cypress:run
