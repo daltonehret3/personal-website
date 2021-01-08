@@ -1,0 +1,89 @@
+{
+  "root": true,
+  "parser": "@babel/eslint-parser",
+  "plugins": [
+    "jest",
+    "react",
+    "eslint-plugin-import"
+  ],
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:react/recommended",
+    "eslint:recommended"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      4
+    ],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/jsx-tag-spacing": ["error",
+      {
+        "beforeSelfClosing": "always"
+      }],
+    "react/jsx-max-props-per-line": [1, {"when":  "always"}],
+    "arrow-body-style": ["error", "as-needed"],
+    "object-curly-newline": ["error", {"minProperties": 4, "multiline":  true}],
+    "object-property-newline": ["error", {"allowAllPropertiesOnSameLine":  false}],
+    "max-len": ["error",
+      {
+        "code": 120
+      }],
+    "no-unused-vars": "error",
+    "no-multiple-empty-lines": ["error",  {"max": 1}
+    ],
+    "import/order": ["error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always"
+      }
+    ],
+    "padding-line-between-statements": ["error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      },
+      {
+        "blankLine": "always",
+        "prev": "block",
+        "next": "import"
+      }
+    ],
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        "caseSensitive": true,
+        "natural": false,
+        "minKeys": 2
+      }
+    ],
+    "no-fallthrough": "off",
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "error",
+          "warn"
+        ]
+      }
+    ],
+    "eqeqeq": "error"
+  },
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "reportUnusedDisableDirectives": true
+}
