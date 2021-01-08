@@ -23,5 +23,5 @@ jobs:
         run: |
           docker build -t "personal-website" ./
       - name: Run E2E tests
-          run: |
-            yarn docker:upd && yarn cypress:run && yarn docker:down
+        run: |
+          yarn docker:upd && yarn cypress:run && yarn docker:down
