@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  personal-website:
+    image: personal-website
+    stdin_open: true
+    ports:
+      - "3000:3000"
