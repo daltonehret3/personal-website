@@ -17,13 +17,11 @@ const StyledNavLink = styled(NavLink)`
     }
 `;
 
-export const Navbar = () => {
-    return (
-        <StyledDiv>
-            <StyledNavLink to={'/'}>{'Home'}</StyledNavLink>
-            <StyledNavLink to={'/about'}>{'About'}</StyledNavLink>
-            <StyledNavLink to={'/projects'}>{'Projects'}</StyledNavLink>
-            <StyledNavLink to={'/contact'}>{'Contact'}</StyledNavLink>
-        </StyledDiv>
-    )
-}
+export const Navbar = () => (
+    <StyledDiv>
+        <StyledNavLink to={'/'}>{'Home'}</StyledNavLink>
+        <StyledNavLink to={'/about'}>{'About'}</StyledNavLink>
+        <StyledNavLink to={'/projects'}>{'Projects'}</StyledNavLink>
+        <StyledNavLink to={'/contact'}>{'Contact'}</StyledNavLink>
+    </StyledDiv>
+)
