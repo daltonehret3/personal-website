@@ -1,7 +1,9 @@
 import React from 'react';
 
+import {HeaderNoMargin} from "../styles/headers";
+
 export const About = () => (
     <div>
-        <h1>{'About Me'}</h1>
+        <HeaderNoMargin>{'About Me'}</HeaderNoMargin>
     </div>
 );

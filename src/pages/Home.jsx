@@ -1,7 +1,9 @@
 import React from 'react';
 
+import {HeaderNoMargin} from "../styles/headers";
+
 export const Home = () => (
     <div>
-        <h1>{'Welcome to my Website!'}</h1>
+        <HeaderNoMargin>{'Welcome to my Website!'}</HeaderNoMargin>
     </div>
 );

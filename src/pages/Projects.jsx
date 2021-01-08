@@ -1,7 +1,9 @@
 import React from 'react';
 
+import {HeaderNoMargin} from "../styles/headers";
+
 export const Projects = () => (
     <div>
-        <h1>{'These are My Projects'}</h1>
+        <HeaderNoMargin>{'These are My Projects'}</HeaderNoMargin>
     </div>
 );

@@ -1,7 +1,9 @@
 import React from 'react';
 
+import {HeaderNoMargin} from "../styles/headers";
+
 export const Contact = () => (
     <div>
-        <h1>{'Contact Me!'}</h1>
+        <HeaderNoMargin>{'Contact Me!'}</HeaderNoMargin>
     </div>
 );
