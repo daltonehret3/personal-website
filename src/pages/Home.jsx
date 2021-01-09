@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import {HeaderNoMargin} from "../styles/headers";
+import { HeaderNoMargin } from "../styles/headers";
 
-export const Home = () => (
-    <div>
-        <HeaderNoMargin>{'Welcome to my Website!'}</HeaderNoMargin>
-    </div>
-);
+export const Home = () => {
+    useEffect(() => {
+        document.title = 'Dalton Ehret';
+    }, []);
+
+    return (
+        <div>
+            <HeaderNoMargin>{'Welcome to my Website!'}</HeaderNoMargin>
+        </div>
+    );
+};

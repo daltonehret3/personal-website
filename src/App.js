@@ -11,6 +11,7 @@ import {Navbar} from "./components/Navbar";
 function App() {
     return (
         <div className="App">
+            <Navbar />
             <Route exact
                 path={'/'}
                 component={Home} />
@@ -23,7 +24,6 @@ function App() {
             <Route exact
                 path={'/contact'}
                 component={Contact} />
-            <Navbar />
         </div>
     );
 }
