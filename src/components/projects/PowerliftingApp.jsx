@@ -12,22 +12,21 @@ const StyledDiv = styled.div`
 `;
 
 export const PowerliftingApp = () => (
-    <div style={
-        {
-            alignItems: 'center',
-            display: 'flex',
-            justifyContent: 'center'
+    <div
+        style={
+            {
+                alignItems: 'center',
+                display: 'flex',
+                justifyContent: 'center'
+            }
         }
-    }
     >
         <StyledDiv>
             <h2>{'Unnamed Powerlifting App'}</h2>
             <h4>{'Motivation'}</h4>
-            <p>
+            <p data-testid={'projectMotivation'}>
                 {
-                    'Throughout the years, I have been working on powerlifting and just getting overall stronger. '
-                }
-                {
+                    'Throughout the years, I have been working on powerlifting and just getting overall stronger. ' +
                     'As I have looked back at how many notebooks I have gone ' +
                     'throught to keep track of all my workouts, I realized that ' +
                     'I was using way too much paper and wanted to find a solution.'

@@ -12,11 +12,10 @@ module.exports = {
             statements: 100,
         },
     },
-    collectCoverage: true,
-    coverageReporters: ['lcov', 'text', 'cobertura', 'html', 'json'],
+    coverageReporters: ['lcov', 'text', 'html', 'json'],
     testMatch: [
-        '**/tests/**/*.js',
-        '**/tests/**/*.jsx'
+        '**/tests/**/*.test.js',
+        '**/tests/**/*.test.jsx'
     ],
     moduleFileExtensions: [
         "js",
@@ -24,5 +23,5 @@ module.exports = {
         "json",
         "node"
     ],
-    testPathIgnorePatterns: ['node_modules']
+    testPathIgnorePatterns: ['/node_modules/']
 };
