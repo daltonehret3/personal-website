@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Loader from 'react-loader-spinner';
 
 import Logo from '../assets/white-bordered-logo.png';
 
@@ -32,13 +31,15 @@ export const WebsiteComingSoon = () => (
             <h1 style={{paddingBottom: '8px'}}>
                 {'Website Coming Soon!'}
             </h1>
-            <Loader
-                type={'Oval'}
-                color="cyan"
-                height={100}
-                width={100}
-            />
-
+            <h3>
+                {'Feel free to contact me at: '}
+                <a
+                    style={{color: 'white'}}
+                    href={'mailto: daltonehret+dev@gmail.com'}
+                >
+                    {'daltonehret+dev@gmail.com'}
+                </a>
+            </h3>
         </div>
     </StyledDiv>
 );
