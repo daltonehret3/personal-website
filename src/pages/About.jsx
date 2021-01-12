@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 
-import { HeaderNoMargin } from "../styles/headers";
+import {HeaderNoMargin} from "../styles/headers";
+import {StyledDiv} from "../styles/divs";
 
 export const About = () => {
     useEffect(() => {
@@ -8,8 +9,8 @@ export const About = () => {
     }, []);
 
     return (
-        <div>
+        <StyledDiv>
             <HeaderNoMargin>{'About Me'}</HeaderNoMargin>
-        </div>
+        </StyledDiv>
     );
 }
