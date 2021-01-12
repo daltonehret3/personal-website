@@ -10,7 +10,7 @@ import {Navbar} from "./components/Navbar";
 import {WebsiteComingSoon} from "./pages/WebsiteComingSoon";
 
 function App() {
-    const isDev = process.env.NODE_ENV === 'develdopment';
+    const isDev = process.env.NODE_ENV === 'development';
 
     if (isDev) {
         return (
