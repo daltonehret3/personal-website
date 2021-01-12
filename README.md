@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# daltonehret.dev
+![Website](https://img.shields.io/website?down_message=down%20for%20maintenance&label=website&up_message=online&url=https%3A%2F%2Fwww.daltonehret.dev) ![GitHub repo size](https://img.shields.io/github/repo-size/daltonehret3/personal-website)
 
 ## Available Scripts
 
