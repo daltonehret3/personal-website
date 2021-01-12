@@ -2,7 +2,7 @@ import React from 'react';
 import {render} from "@testing-library/react";
 import {BrowserRouter} from "react-router-dom";
 
-import {Navbar} from "../../src/components/Navbar";
+import {Navbar} from "../../../src/components/navigation/Navbar";
 
 describe('Navbar', () => {
     const {getByText} = render(
