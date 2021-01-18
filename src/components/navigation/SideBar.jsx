@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 
+import mountainImage from '../../assets/mountain.jpg';
+
 import {Navbar} from "./Navbar";
 
 const StyledAside = styled.aside`
@@ -12,11 +14,15 @@ const StyledAside = styled.aside`
         width: 25%;
         font-size: 16px;
         text-align: left;
-        background-color: #910d03;
 `;
 
 export const SideBar = () => (
-    <StyledAside>
+    /*
+     * Background Image is here because if I put it above,
+     * Tests would fail
+     */
+
+    <StyledAside style={{backgroundImage: `url(${mountainImage}`}}>
         <Navbar />
     </StyledAside>
 )
