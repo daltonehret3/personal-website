@@ -18,15 +18,16 @@ export const College = () => (
             <p data-testid={'college-overview'}>
                 {
                     'I went to Central College where I majored in Computer Science ' +
-                    'and minored in Mathematics.'
+                    'and minored in Mathematics.  I also took part in the AMC ICPC programming ' +
+                    'competition at Iowa State University in 2018.'
                 }
             </p>
             <h4>{'Activities'}</h4>
             <div
                 data-testid={'college-activities'}
                 style={{
-                    'margin-top': '-10px',
-                    'padding-left': '8px'
+                    'marginTop': '-10px',
+                    'paddingLeft': '8px'
                 }}
             >
                 <li>{'Computer Science Club'}</li>
