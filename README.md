@@ -1,11 +1,6 @@
 # daltonehret.dev
 ![Website](https://img.shields.io/website?down_message=down%20for%20maintenance&label=website&up_message=online&url=https%3A%2F%2Fwww.daltonehret.dev) ![GitHub repo size](https://img.shields.io/github/repo-size/daltonehret3/personal-website)
 
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -46,7 +41,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### `yarn verify`
 This command runs the same thing command that the PR Verify check runs.  If this check passes, chances are you'll be able to merge the PR.
 
-#E2E Tests
+# E2E Tests
 I am using Cypress for my E2E testing. To run the tests:
 - `yarn start`
 - `yarn cypress:open` to run them in a browser

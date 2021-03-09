@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 
 import { HeaderNoMargin } from "../styles/headers";
 import { PowerliftingApp } from '../components/projects/PowerliftingApp';
+import {StyledDiv} from "../styles/divs";
 
 export const Projects = () => {
     useEffect(() => {
@@ -9,11 +10,11 @@ export const Projects = () => {
     }, []);
 
     return (
-        <div>
+        <StyledDiv style={{flexDirection: 'column'}}>
             <HeaderNoMargin>{'These are My Projects'}</HeaderNoMargin>
             <div>
                 <PowerliftingApp />
             </div>
-        </div>
+        </StyledDiv>
     );
 };

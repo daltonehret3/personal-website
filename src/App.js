@@ -6,8 +6,8 @@ import {Projects} from "./pages/Projects";
 import {Contact} from "./pages/Contact";
 import {Home} from "./pages/Home";
 import {About} from './pages/About';
-import {Navbar} from "./components/Navbar";
 import {WebsiteComingSoon} from "./pages/WebsiteComingSoon";
+import {SideBar} from "./components/navigation/SideBar";
 
 function App() {
     const isDev = process.env.NODE_ENV === 'development';
@@ -15,7 +15,7 @@ function App() {
     if (isDev) {
         return (
             <div className="App">
-                <Navbar />
+                <SideBar />
                 <Route exact
                     path={'/'}
                     component={Home} />

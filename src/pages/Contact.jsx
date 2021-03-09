@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { HeaderNoMargin } from "../styles/headers";
+import {StyledDiv} from "../styles/divs";
 
 export const Contact = () => {
     useEffect(() => {
@@ -8,8 +9,8 @@ export const Contact = () => {
     }, []);
 
     return (
-        <div>
+        <StyledDiv>
             <HeaderNoMargin>{'Contact Me!'}</HeaderNoMargin>
-        </div>
+        </StyledDiv>
     );
 };
