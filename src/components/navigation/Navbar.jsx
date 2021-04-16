@@ -9,6 +9,7 @@ const NavigationDiv = styled.div`
     bottom: 0;
     left: 0;
     width: 25%;
+    max-width: 360px;
     padding: 45px 0;
     line-height: 30px;
     position: fixed;

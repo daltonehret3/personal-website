@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledList = styled.li`
-    width: 25%;
+    width: auto;
     height: auto;
+    padding-inline: 16px;
     margin-top: 10px;
     margin-right: 10px;
-    display: inline-block;
-    // border: 1px solid red;
+    display: table-cell;
+    vertical-align: middle;
+    // border: 1px dotted red;
 `;

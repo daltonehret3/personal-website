@@ -4,11 +4,11 @@ export const StyledDiv = styled.div`
     background-color: #262525;
     bottom: 0;
     height: max-content;
-    margin-left: 25%;
+    margin-left: 0;
     min-height: 100%;
-    position: absolute;
     top: 0;
-    width: 75%;
+    width: 100%;
+    padding-left: 360px;
 `;
 
 export const DottedBorderedDiv = styled.div`
@@ -28,5 +28,6 @@ export const BorderedDiv = styled.div`
     color: white;
     margin: 24px;
     padding: 8px;
-    width: 50%;
+    width: 75%;
+    min-width: 300px;
 `;

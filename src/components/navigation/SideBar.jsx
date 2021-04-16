@@ -12,6 +12,7 @@ const StyledAside = styled.aside`
         position: fixed;
         z-index: 2;
         width: 25%;
+        max-width: 360px;
         font-size: 16px;
         text-align: left;
 `;
