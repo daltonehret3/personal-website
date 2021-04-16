@@ -3,7 +3,6 @@ import React, {useEffect} from 'react';
 import {College} from "../components/about/College";
 import {HeaderNoMargin} from "../styles/headers";
 import {StyledDiv} from "../styles/divs";
-import {College} from "../components/about/College";
 import {VerticalLine} from '../components/helpers/VerticalLine';
 import {WorkHistory} from "../components/about/WorkHistory";
 
