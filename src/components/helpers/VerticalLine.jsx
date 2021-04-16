@@ -2,7 +2,7 @@ import React from 'react';
 
 export const VerticalLine = (props) => {
     const backgroundColor = props.backgroundColor || 'white';
-    const height = props.height || '75px';
+    const height = props.height || '100px';
     const width = props.width || '6px';
 
     return (
