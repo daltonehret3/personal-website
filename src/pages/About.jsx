@@ -6,7 +6,6 @@ import {StyledDiv} from "../styles/divs";
 import {VerticalLine} from '../components/helpers/VerticalLine';
 import {WorkHistory} from "../components/about/WorkHistory";
 
-
 export const About = () => {
     useEffect(() => {
         document.title = 'About Me';
