@@ -53,7 +53,7 @@
                     "Performed basic database changes for our development environment to simulate data that we would see in production (used for integration and manual testing).",
                     "Helped lead the charge in making a more stable product by writing Acceptance/End-to-End tests that would run every night as well as before every deployment to ensure a fully functional product and to detect potential bugs before release."
                 ],
-                "Technology": ["React", "React Native", "Jest", "Wix/Detox", "Cypress", "Node.js", "SQL", "Google Cloud Platform", "Apollo GraphQL", "Apple Developer Program"]
+                "Technology": ["React", "React Native", "Jest", "Wix/Detox", "Cypress", "Node.js", "SQL", "Google Cloud Platform", "Apollo GraphQL", "Apple Developer Program", "REST APIs"]
             }
         ]
     }
