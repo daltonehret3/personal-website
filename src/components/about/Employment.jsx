@@ -3,6 +3,9 @@ import React from 'react';
 import { StyledList, StyledUL } from '../../styles/lists';
 import { DottedBorderedDiv } from '../../styles/divs';
 
+import { ExternalProjects } from './ExternalProjects';
+import { InternalProjects } from './InternalProjects';
+
 const SingleEmployer = (props) => (
     <DottedBorderedDiv
         style={{
@@ -50,74 +53,8 @@ const ContractWork = (props) => (
         >
             {`From ${props.Start_Date} - ${props.End_Date}`}
         </h4>
-        {props.Projects?.Internal ? (
-            <>
-                <h2
-                    style={{
-                        fontWeight: '900',
-                        textDecoration: 'underline',
-                    }}
-                >
-                    {'Internal Projects'}
-                </h2>
-                {props.Projects.Internal.map((project, i) => (
-                    <div 
-                        key={project + '-' + i} 
-                        style={{ paddingInline: '24px' }}
-                    >
-                        <h2>{project.Name}</h2>
-                        <h4 style={{ fontWeight: '700' }}>
-                            {`From ${project.Start_Date} - ${project.End_Date}`}
-                        </h4>
-                        <p>
-                            {project.Description.map((item, i) => (
-                                <li key={i}>{item}</li>
-                            ))}
-                        </p>
-                        <h4>{'Technology'}</h4>
-                        <StyledUL>
-                            {project.Technology.map((item, i) => (
-                                <StyledList key={`${item}-${i}`}>{item}</StyledList>
-                            ))}
-                        </StyledUL>
-                    </div>
-                ))}
-            </>
-        ) : null}
-        {props.Projects?.External ? (
-            <>
-                <h2
-                    style={{
-                        fontWeight: '900',
-                        textDecoration: 'underline',
-                    }}
-                >
-                    {'External Projects'}
-                </h2>
-                {props.Projects.External.map((project, i) => (
-                    <div 
-                        key={project + '-' + i} 
-                        style={{ paddingInline: '24px' }}
-                    >
-                        <h2>{project.Partner_Site}</h2>
-                        <h4 style={{ fontWeight: '700' }}>
-                            {`From ${project.Start_Date} - ${project.End_Date}`}
-                        </h4>
-                        <p>
-                            {project.Description.map((item, i) => (
-                                <li key={i}>{item}</li>
-                            ))}
-                        </p>
-                        <h4>{'Technology'}</h4>
-                        <StyledUL>
-                            {project.Technology.map((item, i) => (
-                                <StyledList key={`${item}-${i}`}>{item}</StyledList>
-                            ))}
-                        </StyledUL>
-                    </div>
-                ))}
-            </>
-        ) : null}
+        {props.Projects?.Internal ? <InternalProjects projects={[props.Projects.Internal]} /> : null}
+        {props.Projects?.External ? <ExternalProjects projects={[props.Projects.External]} /> : null}
     </DottedBorderedDiv>
 );
 
