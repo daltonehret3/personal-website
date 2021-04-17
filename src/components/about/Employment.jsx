@@ -10,16 +10,25 @@ const SingleEmployer = (props) => (
             width: 'auto',
         }}
     >
-        <h2>{props.Employer}</h2>
-        <h3>{props.Title}</h3>
-        <h4 style={{ fontWeight: '700' }}>{`From ${props.Start_Date} - ${props.End_Date}`}</h4>
-        <p style={{ paddingInline: '24px' }}>
+        <h2 data-testid={'employer-name'}>{props.Employer}</h2>
+        <h3 data-testid={'job-title'}>{props.Title}</h3>
+        <h4 
+            data-testid={'dates-worked'} 
+            style={{ fontWeight: '700' }}
+        >
+            {`From ${props.Start_Date} - ${props.End_Date}`}
+        </h4>
+        <p 
+            data-testid={'job-description'}
+            style={{ paddingInline: '24px' }}
+        >
             {props.Description.map((item, i) => (
                 <li key={i}>{item}</li>
             ))}
         </p>
         <h4>{'Technology'}</h4>
         <ul
+            data-testid={'tech-used'}
             style={{
                 display: 'grid',
                 gridAutoRows: '20px',
@@ -42,9 +51,14 @@ const ContractWork = (props) => (
             width: 'auto',
         }}
     >
-        <h2>{props.Employer}</h2>
-        <h3>{props.Title}</h3>
-        <h4 style={{ fontWeight: '700' }}>{`From ${props.Start_Date} - ${props.End_Date}`}</h4>
+        <h2 data-testid={'employer-name'}>{props.Employer}</h2>
+        <h3 data-testid={'job-title'}>{props.Title}</h3>
+        <h4 
+            data-testid={'dates-worked'} 
+            style={{ fontWeight: '700' }}
+        >
+            {`From ${props.Start_Date} - ${props.End_Date}`}
+        </h4>
         {props.Projects?.Internal ? (
             <>
                 <h2
