@@ -1,0 +1,60 @@
+{
+    "Employer": "Source Allies, Inc",
+    "Title": "Software Engineering Consultant",
+    "Summary": "Worked with various companies in the Des Moines area",
+    "Start_Date": "Sept. 2019",
+    "End_Date": "Current",
+    "Projects": {
+        "Internal": [
+            {
+                "Name": "Payment Gateway",
+                "Start_Date": "Oct. 2020",
+                "End_Date": "Dec. 2020",
+                "Description": [
+                    "Building out a payment service for Colleges/Universities and Non-profits.",
+                    "Built out a reusable, drop-in, web component",
+                    "Worked with Authorize.net to handle all PCI compliance concerns.",
+                    "Worked with IMT Insurance during this time as a trial period to determine future partnership."
+                ],
+                "Technology": ["StencilJS", "Java", "Authorize.net", "GitHub"]
+            }
+        ],
+        "External": [
+            {
+                "Partner_Site": "Corteva",
+                "Start_Date": "Jan. 2021",
+                "End_Date": "Current",
+                "Description": [
+                    "Working to integrate accounts between Corteva and Granular",
+                    "Building out Proof of Concepts to verify the viability of adding new features to existing projects."
+                ],
+                "Technology": ["C#", "Vanilla Javascript", "Azure DevOps", "React", "AWS", "GitLab"]
+            },
+            {
+                "Partner_Site": "IMT Insurance",
+                "Start_Date": "Oct. 2020",
+                "End_Date":"Dec. 2020",
+                "Description": [
+                    "Deploying iOS Native apps",
+                    "Bug fixes",
+                    "Wrote up proposals on how to improve development speed and confidence in the products we, and IMT, were shipping",
+                    "Helped obtain IMT as a full-time client for Source Allies, Inc"
+                ],
+                "Technology": ["Swift", "Xcode", "GitLab", "Apple Developer Program"]
+            },
+            {
+                "Partner_Site": "Hy-Vee",
+                "Start_Date": "Sept. 2019",
+                "End_Date": "Oct. 2020",
+                "Description": [
+                    "Lead Mobile App Developer for the Loyalty (Fuel Saver) Team.",
+                    "Building reusable components and functions to be used by different teams on different projects company wide.",
+                    "Provide support to Customer Care for various issues customers were having with their account information and fuel saver data.",
+                    "Performed basic database changes for our development environment to simulate data that we would see in production (used for integration and manual testing).",
+                    "Helped lead the charge in making a more stable product by writing Acceptance/End-to-End tests that would run every night as well as before every deployment to ensure a fully functional product and to detect potential bugs before release."
+                ],
+                "Technology": ["React", "React Native", "Jest", "Wix/Detox", "Cypress", "Node.js", "SQL", "Google Cloud Platform", "Apollo GraphQL", "Apple Developer Program", "REST APIs"]
+            }
+        ]
+    }
+}
