@@ -27,20 +27,11 @@ const SingleEmployer = (props) => (
             ))}
         </p>
         <h4>{'Technology'}</h4>
-        <ul
-            data-testid={'tech-used'}
-            style={{
-                display: 'grid',
-                gridAutoRows: '20px',
-                gridGap: '5px',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
-                paddingLeft: '16px',
-            }}
-        >
+        <StyledUL data-testid={'tech-used'}>
             {props.Technology.map((item, i) => (
                 <StyledList key={`${item}-${i}`}>{item}</StyledList>
             ))}
-        </ul>
+        </StyledUL>
     </DottedBorderedDiv>
 );
 
