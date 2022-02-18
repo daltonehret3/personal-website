@@ -11,18 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install yarn dependencies
+      - name: Install dependencies
         run: |
-          yarn install
+          npm i
       - name: Verify ESLint
         run: |
-          yarn lint
+          npm run lint
       - name: Run Unit Tests and Coverage
         run: |
-          yarn test
+          npm run test
       - name: Create Docker Image
         run: |
           docker build -t "personal-website" ./
       - name: Run E2E tests
         run: |
-          yarn docker:upd && yarn cypress:run && yarn docker:down
+          npm run docker:upd && npm run cypress:run && npm run docker:down
