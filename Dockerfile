@@ -1,5 +1,6 @@
 # pull official base image
-FROM node:16-slim
+FROM node:16.14.0-alpine as builder
+EXPOSE 3000
 
 # set working directory
 WORKDIR /app
@@ -11,12 +12,14 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY ./package.json ./
 COPY ./package-lock.json ./
 
-RUN npm i
+#RUN npm i
 
 # add app
 COPY . ./
 
-EXPOSE 3000
+#EXPOSE 3000
 
 # start app 
+USER node
+# CMD ["node", "--experimental-modules", "--es-module-specifier-resolution=node", "index.js"]
 CMD ["npm", "start"]

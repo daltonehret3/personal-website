@@ -11,7 +11,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "docker:up": "docker-compose up",
-    "docker:upd": "docker-compose up -d",
+    "docker:upd": "docker-compose up --build -d",
     "docker:down": "docker-compose down",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .js,.jsx,.tx,.tsx",
