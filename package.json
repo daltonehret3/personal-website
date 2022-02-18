@@ -18,29 +18,29 @@
     "verify": "yarn test && yarn cypress:run"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "eslint-plugin-prettier": "^3.3.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-loader-spinner": "^3.1.14",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "styled-components": "^5.2.1",
-    "web-vitals": "^0.2.4"
+    "@testing-library/jest-dom": "5.16.1",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "13.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-loader-spinner": "4.0.0",
+    "react-router-dom": "6.2.1",
+    "react-scripts": "5.0.0",
+    "styled-components": "5.3.3",
+    "web-vitals": "2.1.2"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.12.1",
-    "@babel/plugin-syntax-jsx": "^7.12.1",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
-    "babel-jest": "^26.6.3",
-    "babel-polyfill": "^6.26.0",
-    "cypress": "^6.2.1",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-react": "^7.22.0",
-    "prettier": "^2.2.1"
+    "@babel/eslint-parser": "7.16.5",
+    "@babel/plugin-syntax-jsx": "7.16.5",
+    "@babel/preset-env": "7.16.5",
+    "@babel/preset-react": "7.16.5",
+    "babel-jest": "27.4.5",
+    "babel-polyfill": "6.26.0",
+    "cypress": "9.2.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-react": "7.28.0",
+    "prettier": "2.5.1"
   },
   "browserslist": {
     "production": [
