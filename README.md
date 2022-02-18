@@ -41,7 +41,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### `npm run verify`
 This command runs the same thing command that the PR Verify check runs.  If this check passes, chances are you'll be able to merge the PR.
 
-#E2E Tests
+# E2E Tests
 I am using Cypress for my E2E testing. To run the tests:
 - `npm run start`
 - `npm run cypress:open` to run them in a browser
