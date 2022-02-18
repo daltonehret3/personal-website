@@ -5,10 +5,16 @@ import styled from 'styled-components';
 const activeStyling = {textDecoration: 'underline white'};
 
 const NavigationDiv = styled.div`
-    margin: 45px 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    max-width: 360px;
+    padding: 45px 0;
     line-height: 30px;
-    position: relative;
+    position: fixed;
     font-size: 16px;
+    background: rgba(145, 13, 3, 0.5);
 `;
 
 const StyledNavLink = styled(NavLink)`
