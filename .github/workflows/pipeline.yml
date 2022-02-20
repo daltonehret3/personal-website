@@ -1,4 +1,12 @@
 name: Pipeline
+
+resources: 
+
+- name: pull-request
+  type: pull-request
+  check_every: 24h
+  source:
+    repository: ((organization))/((repository))
     
 jobs: 
 
