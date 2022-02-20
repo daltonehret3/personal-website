@@ -20,6 +20,6 @@ COPY . ./
 #EXPOSE 3000
 
 # start app 
-USER node
+# USER node
 # CMD ["node", "--experimental-modules", "--es-module-specifier-resolution=node", "index.js"]
 CMD ["npm", "start"]
