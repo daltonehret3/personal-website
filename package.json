@@ -30,7 +30,7 @@
     "react-router-dom": "5.3.0",
     "react-scripts": "4.0.3",
     "styled-components": "5.3.3",
-    "web-vitals": "0.2.4"
+    "web-vitals": "2.1.4"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.12.1",
@@ -42,7 +42,7 @@
     "chance": "1.1.8",
     "cypress": "9.5.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react": "7.28.0",
     "prettier": "2.5.1"
   },
   "browserslist": {
