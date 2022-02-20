@@ -25,4 +25,4 @@ jobs:
           docker build -t "personal-website" ./
       - name: Run E2E tests
         run: |
-          npm run docker:start && npm run cypress:run && npm run docker:stop
+          npm run docker:start && wait-on http://localhost:3000 && npm run cypress:run && npm run docker:stop
