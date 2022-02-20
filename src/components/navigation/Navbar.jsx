@@ -2,8 +2,6 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import styled from 'styled-components';
 
-const activeStyling = {textDecoration: 'underline white'};
-
 const NavigationDiv = styled.div`
     top: 0;
     bottom: 0;
@@ -29,6 +27,8 @@ const StyledNavLink = styled(NavLink)`
         text-decoration: underline dotted white;
         cursor: pointer;
     }
+
+    
 `;
 
 export const Navbar = () => (
@@ -36,9 +36,8 @@ export const Navbar = () => (
         <ul style={{listStyle: 'none'}}>
             <li>
                 <StyledNavLink
-                    activeStyle={activeStyling}
-                    exact={true}
                     data-cy={'homeButton'}
+                    data-testid={'homeButton'}
                     to={'/'}
                 >
                     {'Home'}
@@ -46,8 +45,6 @@ export const Navbar = () => (
             </li>
             <li>
                 <StyledNavLink
-                    activeStyle={activeStyling}
-                    exact={true}
                     data-cy={'aboutButton'}
                     to={'/about'}
                 >
@@ -56,8 +53,6 @@ export const Navbar = () => (
             </li>
             <li>
                 <StyledNavLink
-                    activeStyle={activeStyling}
-                    exact={true}
                     data-cy={'projectsButton'}
                     to={'/projects'}
                 >
@@ -66,8 +61,6 @@ export const Navbar = () => (
             </li>
             <li>
                 <StyledNavLink
-                    activeStyle={activeStyling}
-                    exact={true}
                     data-cy={'contactButton'}
                     to={'/contact'}
                 >
