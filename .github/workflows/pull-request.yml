@@ -13,7 +13,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies
         run: |
-          rm -rf node_modules
           npm i
       - name: Verify ESLint
         run: |
