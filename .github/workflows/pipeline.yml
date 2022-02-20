@@ -1,3 +1,7 @@
+resource_types:
+  - name: pull-request
+    type: registry-image
+    
 jobs: 
 - name: pr-verify
   public: true
