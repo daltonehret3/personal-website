@@ -1,7 +1,10 @@
-version: "3.7"
+version: "3"
 services:
   personal-website:
-    image: personal-website
+    container_name: personal-website
+    build: 
+      context: .
+    image: personal-website:SNAPSHOT
     stdin_open: true
     ports:
       - "3000:3000"
