@@ -10,7 +10,7 @@ jobs:
   pull-request:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/pull-request
+      - uses: actions/personal-website
       - name: Install dependencies
         run: |
           npm i
