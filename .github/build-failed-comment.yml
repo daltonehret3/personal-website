@@ -1,0 +1,14 @@
+platform: linuz
+image_resource:
+  type: registry-image
+  source:
+    repository: alpine
+    tag: 3.11
+inputs:
+  - name: scripts
+  - name: failure-logs
+outputs:
+  name: github-comment
+run:
+  dir: scripts
+  path: ci/scripts/build-failed-comment.sh
