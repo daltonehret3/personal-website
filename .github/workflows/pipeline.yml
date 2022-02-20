@@ -10,7 +10,7 @@ resources:
     
 jobs: 
 
-- name: pr-verify
+- name: pull-verify
   public: true
   build_logs_retention:
     builds: 50
