@@ -1,34 +1,32 @@
-resource_types:
-  - name: pull-request
-    type: registry-image
+name: Pipeline
     
 jobs: 
-- name: pr-verify
-  public: true
-  build_logs_retention:
-    builds: 50
-  plan:
-  - put: pull-request
-    params:
-      path: (( repository ))
-      status: pending
-      steps: 
-        - do:
-          - task: pr-verify
-            file: ((repository))/.github/workflows/pull-request.yml
-            on_failure: 
-              task: build-failed-comment
-              file: ((repository))/.github/build-failed-comment.yml
-              imput_mapping:
-                scripts: ((repository))
-                failure-logs: failure-logs
-    on_success:
-      put: pull-request
+  - name: pr-verify
+    public: true
+    build_logs_retention:
+      builds: 50
+    plan:
+    - put: pull-request
       params:
-        path: pull-request
-        status: success
-    on_failure:
-      put: pull-request
-      params:
-        path: pull-request
-        status: failure
+        path: (( repository ))
+        status: pending
+        steps: 
+          - do:
+            - task: pr-verify
+              file: ((repository))/.github/workflows/pull-request.yml
+              on_failure: 
+                task: build-failed-comment
+                file: ((repository))/.github/build-failed-comment.yml
+                imput_mapping:
+                  scripts: ((repository))
+                  failure-logs: failure-logs
+      on_success:
+        put: pull-request
+        params:
+          path: pull-request
+          status: success
+      on_failure:
+        put: pull-request
+        params:
+          path: pull-request
+          status: failure
