@@ -27,19 +27,3 @@ jobs:
       - name: Run E2E tests
         run: |
           npm run docker:start && npm run cypress:run && npm run docker:stop
-        on_failure:
-          task: build-failed-comment
-          file: personal-website/.github/build-failed-comment.yml
-          input_mapping:
-            scripts: personal-website
-            failure-logs: failure-logs
-        on_success:
-          put: pull-request
-          inputs:
-            - personal-website
-            - github-comment
-          params:
-            path: pull-request
-            comment_file: github-comment/comment.txt
-            status: failure
-            delete_previous_comments: true
