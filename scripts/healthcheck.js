@@ -14,7 +14,7 @@ const services = [
         isUp: false,
         serviceName: 'personal-website', 
         tags: [ALL], 
-        uri: 'http://localhost:3000/healthz'
+        uri: 'http://localhost:3000'
     }
 ];
 
