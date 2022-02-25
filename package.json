@@ -21,7 +21,6 @@
     "verify": "npm run test && npm run docker:start && npm run docker:health && npm run cypress:run"
   },
   "dependencies": {
-    "@hapi/hapi": "^20.2.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-loader-spinner": "5.1.4",
