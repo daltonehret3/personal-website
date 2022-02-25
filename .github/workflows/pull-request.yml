@@ -1,4 +1,4 @@
-name: Pull Request
+name: pr-verify
 
 on:
   pull_request:
@@ -11,18 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Setup node 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
       - name: Install dependencies
         run: |
           npm i
-      - name: Verify ESLint
+      - name: PR Verify
         run: |
-          npm run lint
-      - name: Run Unit Tests and Coverage
-        run: |
-          npm run test
-      - name: Create Docker Image
-        run: |
-          docker build -t "personal-website" ./
-      - name: Run E2E tests
-        run: |
-          npm run docker:start && npm run cypress:run && npm run docker:stop
+          npm run verify
