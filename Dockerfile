@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:16.14.0-alpine as builder
+FROM node:16.14.2-alpine as builder
 EXPOSE 3000
 
 # set working directory
