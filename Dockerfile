@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:16.14.2-alpine as builder
+FROM node:16.14.2-slim
 EXPOSE 3000
 
 # set working directory
@@ -17,9 +17,5 @@ COPY ./package-lock.json ./
 # add app
 COPY . ./
 
-#EXPOSE 3000
-
-# start app 
-# USER node
-# CMD ["node", "--experimental-modules", "--es-module-specifier-resolution=node", "index.js"]
+# start app
 CMD ["npm", "start"]
