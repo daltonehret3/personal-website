@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:16.14.2-slim
+FROM node:16.15.0-slim
 EXPOSE 3000
 
 # set working directory
