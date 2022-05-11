@@ -40,7 +40,7 @@
     "babel-jest": "27.5.1",
     "babel-polyfill": "6.26.0",
     "chance": "1.1.8",
-    "cypress": "9.5.4",
+    "cypress": "9.6.1",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.29.4",
