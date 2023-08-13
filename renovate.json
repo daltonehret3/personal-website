@@ -1,5 +1,17 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "description": "Automerges minor/patch/linter updates.",
+  "dependencyDashboard": true,
+  "dependencyDashboardAutoclose": true,
+  "ignoreUnstable": true,
+  "labels": ["Renovate"],
+  "rebaseWhen": "behind-base-branch",
+  "packageRules": [
+        {
+            "matchDepTypes": ["devDependencies", "dependencies"],
+            "automerge": true
+        }
+    ]
 }
