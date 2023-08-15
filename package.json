@@ -21,8 +21,8 @@
     "verify": "npm run test && npm run docker:start && npm run docker:health && npm run cypress:run"
   },
   "dependencies": {
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-loader-spinner": "5.1.5",
     "react-router-dom": "6.3.0",
     "react-scripts": "5.0.1",
