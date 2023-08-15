@@ -2,13 +2,17 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import styled from 'styled-components';
 
-const activeStyling = {textDecoration: 'underline white'};
-
 const NavigationDiv = styled.div`
-    margin: 45px 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    max-width: 360px;
+    padding: 45px 0;
     line-height: 30px;
-    position: relative;
+    position: fixed;
     font-size: 16px;
+    background: rgba(145, 13, 3, 0.5);
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -23,6 +27,8 @@ const StyledNavLink = styled(NavLink)`
         text-decoration: underline dotted white;
         cursor: pointer;
     }
+
+    
 `;
 
 export const Navbar = () => (
@@ -30,9 +36,8 @@ export const Navbar = () => (
         <ul style={{listStyle: 'none'}}>
             <li>
                 <StyledNavLink
-                    activeStyle={activeStyling}
-                    exact={true}
                     data-cy={'homeButton'}
+                    data-testid={'homeButton'}
                     to={'/'}
                 >
                     {'Home'}
@@ -40,8 +45,6 @@ export const Navbar = () => (
             </li>
             <li>
                 <StyledNavLink
-                    activeStyle={activeStyling}
-                    exact={true}
                     data-cy={'aboutButton'}
                     to={'/about'}
                 >
@@ -50,8 +53,6 @@ export const Navbar = () => (
             </li>
             <li>
                 <StyledNavLink
-                    activeStyle={activeStyling}
-                    exact={true}
                     data-cy={'projectsButton'}
                     to={'/projects'}
                 >
@@ -60,8 +61,6 @@ export const Navbar = () => (
             </li>
             <li>
                 <StyledNavLink
-                    activeStyle={activeStyling}
-                    exact={true}
                     data-cy={'contactButton'}
                     to={'/contact'}
                 >

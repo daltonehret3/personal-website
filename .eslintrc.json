@@ -18,6 +18,11 @@
       "error",
       4
     ],
+    "import/extensions": 0,
+    "testing-library/no-render-in-setup": 0,
+    "testing-library/prefer-screen-queries": 0,
+    "react/prop-types": "off",
+    "react/jsx-key": 0,
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
     "react/jsx-tag-spacing": ["error",

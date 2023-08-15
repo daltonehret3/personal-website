@@ -5,13 +5,13 @@ import {BrowserRouter} from "react-router-dom";
 import {Navbar} from "../../../src/components/navigation/Navbar";
 
 describe('Navbar', () => {
-    const {getByText} = render(
+    const {getByText, getByTestId} = render(
         <BrowserRouter>
             <Navbar />
         </BrowserRouter>);
 
     it('should render all the elements of the Navbar', () => {
-        const homeLink = getByText('Home');
+        const homeLink = getByTestId('homeButton');
         const aboutLink = getByText('About');
         const projectsLink = getByText('Projects');
         const contactLink = getByText('Contact');

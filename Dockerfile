@@ -1,5 +1,6 @@
 # pull official base image
-FROM node:14-slim
+FROM node:18.14.0-slim
+EXPOSE 3000
 
 # set working directory
 WORKDIR /app
@@ -9,14 +10,12 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 # install app dependencies
 COPY ./package.json ./
-COPY ./yarn.lock ./
+COPY ./package-lock.json ./
 
-RUN yarn install
+#RUN npm i
 
 # add app
 COPY . ./
 
-EXPOSE 3000
-
-# start app 
-CMD ["yarn", "start"]
+# start app
+CMD ["npm", "start"]
